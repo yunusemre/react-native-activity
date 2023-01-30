@@ -1,5 +1,6 @@
 import Card from '@/components/card';
 import Search from '@/components/search';
+import Layout from '@/navigation/Layout';
 import axios from 'axios';
 import {useEffect, useMemo, useState} from 'react';
 import {FlatList, View} from 'react-native';
@@ -23,20 +24,22 @@ const HomeScreen = ({navigation}: any) => {
     return response;
   }, [value, data]);
   return (
-    <View style={{flex: 1, padding: 10}}>
-      <Search value={value} searchFilterFunction={setValue} />
+    <Layout isHeader={true}>
+      <View style={{flex: 1, padding: 10}}>
+        <Search value={value} searchFilterFunction={setValue} />
 
-      <View style={{flex: 1}}>
-        <FlatList
-          data={filteredList}
-          renderItem={({item}: any) => (
-            <Card navigation={navigation} data={item} />
-          )}
-          keyExtractor={item => item?.id}
-          numColumns={2}
-        />
+        <View style={{flex: 1}}>
+          <FlatList
+            data={filteredList}
+            renderItem={({item}: any) => (
+              <Card navigation={navigation} data={item} />
+            )}
+            keyExtractor={item => item?.id}
+            numColumns={2}
+          />
+        </View>
       </View>
-    </View>
+    </Layout>
   );
 };
 

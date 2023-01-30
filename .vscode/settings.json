@@ -7,15 +7,39 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "prettier.printWidth": 100,
   "typescript.format.insertSpaceAfterConstructor": true,
-  "eslint.quiet": true,
-  "eslint.format.enable": true,
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.eol": "\n",
-  "sonarlint.rules": {
-    "javascript:S1440": {
-      "level": "on"
-    }
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true,
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "eslint.debug": true,
+  "eslint.quiet": true,
+  "files.autoSave": "afterDelay",
+  "editor.largeFileOptimizations": false,
+  "editor.fontSize": 15,
+  "eslint.format.enable": true,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.tabSize": 2,
+  "git.autofetch": true,
+  "[git-commit]": {
+    "editor.rulers": [72],
+    "workbench.editor.restoreViewState": false
   },
-  "eslint.validate": ["javascript", "typescript"]
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "html.format.indentInnerHtml": true,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "html.format.endWithNewline": true,
+  "html.format.wrapLineLength": 150,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterConstructor": true,
+  "typescript.format.insertSpaceAfterTypeAssertion": true
 }
