@@ -15,9 +15,10 @@ const DetailsScreen = ({route}: any) => {
   useEffect(() => {
     fetchProducts();
   }, []);
+
   return (
     <View style={{flex: 1, padding: 10}}>
-      <Card data={data} />
+      <Card data={data} isClick={false} />
       {data?.thumbnail ? (
         <Image
           style={{

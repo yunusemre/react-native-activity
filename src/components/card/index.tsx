@@ -1,13 +1,15 @@
 import {themes, typeSizes} from '@/theme/index';
 import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 
-const Card = ({navigation, data}: any) => {
+const Card = ({navigation, data, isClick = true}: any) => {
   const {title, description, id, price} = data;
   return (
     <TouchableHighlight
       activeOpacity={0.9}
       style={styles.containerBox}
-      onPress={() => navigation.navigate('Details', {id: id, title: title})}>
+      onPress={() =>
+        isClick ? navigation.navigate('Details', {id: id, title: title}) : null
+      }>
       <View>
         <Text style={styles.cardTitle}>{title}</Text>
         <Text style={styles.cardPrice}>{price}</Text>
