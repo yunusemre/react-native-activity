@@ -21,6 +21,7 @@ export interface themeType {
   color: string;
   primary: string;
   layoutBg: string;
+  lightPrimary: string;
   cardBg: string;
   accent: string;
   error: string;
@@ -52,6 +53,7 @@ const themes: themesType = {
     name: 'light',
     color: '#3D5A76',
     primary: '#2BBCA2',
+    lightPrimary: '#29dcbc',
     layoutBg: '#e0eeec',
     cardBg: '#ffffff',
     accent: '#0071ff',
@@ -61,6 +63,7 @@ const themes: themesType = {
     name: 'dark',
     color: '#ffffff',
     primary: '#2BBCA2',
+    lightPrimary: '#36f3d1',
     layoutBg: '#121212',
     cardBg: '#1e1e1e',
     accent: '#0071ff',

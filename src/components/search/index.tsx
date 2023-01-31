@@ -10,6 +10,7 @@ const Search = ({searchFilterFunction, value}: any) => {
         placeholder="Search..."
         onChangeText={searchFilterFunction}
         value={value}
+        placeholderTextColor={themes.light.lightPrimary}
       />
     </View>
   );
@@ -29,5 +30,6 @@ const styles = StyleSheet.create({
     backgroundColor: themes.light.layoutBg,
     borderColor: themes.light.primary,
     borderWidth: 1,
+    color: themes.light.primary,
   },
 });
