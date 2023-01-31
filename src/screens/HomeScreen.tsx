@@ -27,7 +27,6 @@ const HomeScreen = ({navigation}: any) => {
     <Layout isHeader={true}>
       <View style={{flex: 1, padding: 10}}>
         <Search value={value} searchFilterFunction={setValue} />
-
         <View style={{flex: 1}}>
           <FlatList
             data={filteredList}

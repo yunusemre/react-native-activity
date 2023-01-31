@@ -20,10 +20,14 @@ export default Search;
 const styles = StyleSheet.create({
   searchWrapper: {
     fontSize: typeSizes.FONT_SIZE_MEDIUM,
-    marginBottom: 20,
+    marginHorizontal: 5,
+    marginBottom: 10,
   },
   input: {
     borderRadius: 50,
     paddingHorizontal: 20,
+    backgroundColor: themes.light.layoutBg,
+    borderColor: themes.light.primary,
+    borderWidth: 1,
   },
 });
